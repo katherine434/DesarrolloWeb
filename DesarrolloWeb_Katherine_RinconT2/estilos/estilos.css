@@ -1,0 +1,39 @@
+/**{border:solid 1px black;}*/
+
+body{
+
+}
+
+#contenedor{
+	margin: auto;
+	width: 100%;
+	background-color: #5b7989; 
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-sizing: border-box;	
+}
+
+#cabecera{
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+@media all and (min-width: 700px){
+	#contenedor{
+		width: 100%;
+		display: flex;
+	}
+
+	#cabecera{
+		
+		width: 60%;
+	}
+
+	#navegacion{
+		width: 40%;
+		text-align: center;
+		font-size: 1.5em;
+		margin: 25px 0 25px 0;
+	}
+
+}

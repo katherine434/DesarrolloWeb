@@ -1,14 +1,13 @@
 /**{border:solid 1px black;}*/
 
 body{
-	font-family: cursive;
+	font-family: 'Dancing Script', cursive;
 }
 
 .contenedor{
 	width: 80%;
 	margin: auto;
 }
-
 
 #cabecera{
 	background-color: #5b7989; 
@@ -30,7 +29,6 @@ body{
 	padding-left: 20px;
 }
 
-
 #navegacion{
 	width: 40%;
 	text-align: right;
@@ -51,25 +49,14 @@ body{
 }
 
 
-#f1{
+.imagenes{
+	text-align: center;
 	background-color: #82c3a6; 
-	text-align: center;
 }
 
-#f1 img{
-	width: 50%;
-	padding: 20px;
-}
-
-#fotos{	 
-	text-align: center;
-	background: #d5c75f;
-	display: flex;
-}
-
-#fotos div img{
-	width: 80%;
-	padding: 20px;
+.imagenes img{
+	width: 26%;
+	padding: 25px;
 }
 
 
@@ -78,7 +65,6 @@ body{
 	text-align: center;	
 	background-color:#C6d5c5;
 	border-radius: 0 0 10px 10px;
-	
 }
 
 #datos > div {
@@ -86,52 +72,3 @@ body{
 	padding: 10px;
 	box-sizing: border-box;
 }
-
-/*@media all and (min-width: 800px){
-
-	#titulo{
-		width: 60%;
-
-	}
-
-	#navegacion{
-		margin: 28px 0 28px 0;
-		width: 40%;
-
-	}
-}
-
-@media (max-width: 960px) {
-
-	#f1 img{
-		width: 80%;
-	}
-
-	#navegacion{
-		margin: 0 auto;
-	}
-}
-
-@media (max-width: 600px){
-
-	#cabecera, #fotografias{
-		width: 95%;
-	}
-
-	#navegacion{
-		font-size: 1.2em;
-		width: 100%;
-	}
-
-	#titulo{
-		text-shadow: 2px 2px 2px #02010a;
-		font-size: 0.9em;
-		margin: auto;
-		width: auto;
-	}
-
-	#f1 img{
-		width: 100%;
-		box-sizing: border-box;
-	}
-}*/

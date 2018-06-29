@@ -1,13 +1,23 @@
-/**{border:solid 1px black;}*/
-
 body{
 	font-family: 'Dancing Script', cursive;
+	background-color: black;
+	animation-name: slidein;
+	animation-duration: 1s; 
 }
 
+@keyframes slidein{
+	0%{transform: translate(0, 100%);}
+	60%{transform: translate(0, -1%);}		
+	70%{transform: translate(0, 1%);}
+	100%{transform: translate(0, 0);}
+}
+
+
 .contenedor{
-	width: 80%;
+	width: 90%;
 	margin: auto;
 }
+
 
 #cabecera{
 	background-color: #5b7989; 
@@ -29,6 +39,7 @@ body{
 	padding-left: 20px;
 }
 
+
 #navegacion{
 	width: 40%;
 	text-align: right;
@@ -48,15 +59,34 @@ body{
 	text-decoration: underline;
 }
 
-
-.imagenes{
-	text-align: center;
-	background-color: #82c3a6; 
+a[href^="paisa"]{
+	text-decoration: underline !important;
 }
 
-.imagenes img{
-	width: 26%;
+
+#imagenes{
+	text-align: center;
+	background-color: #82c3a6; 
 	padding: 25px;
+}
+
+#imagenes > img{
+	width: 25%;
+	margin: 10px;
+	border:solid 2px black;
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+#c1{
+	filter: blur(10px);
+}
+
+#c2,#c4,#c6{
+	filter: grayscale(100%);
+}
+
+#c3{
+	filter: sepia(90%);
 }
 
 
@@ -71,4 +101,59 @@ body{
 	width: 30%;
 	padding: 10px;
 	box-sizing: border-box;
+}
+
+#datos > a{
+	padding: 20px;
+	text-align: right;
+}
+
+@media all and (max-width: 860px){
+
+	#titulo{
+		width: 100%;
+		text-align: center;
+	}
+
+	#titulo > h1{
+		padding-left: 0px;
+	}	
+
+	#navegacion{
+		width: 100%;
+		text-align: center;
+		margin: 10px 0 10px 0;
+	}
+
+	#imagenes{
+		flex-direction: column;
+	}
+
+	#imagenes img{
+		width: 70%;
+	}
+
+	#datos{
+		flex-direction: column;
+	}
+
+	#datos > div{
+		width: 100%;
+		text-align: center;
+	}
+	.datos p img{
+		width: 20px !important;
+	}
+}
+
+@media all and (max-width: 600px) {
+
+	.contenedor{
+		width: 100%;
+	}
+
+	#imagenes img{
+		width: 90%;
+	}
+
 }
